@@ -1,0 +1,90 @@
+.about {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full viewport height */
+    background: #ffffff; /* Optional background color for the section */
+    margin-top: 60px;
+}
+
+.about-container {
+    width: 1200px; /* Set the width to 1200px */
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align content to the top */
+    justify-content: space-between; /* Space between left and right sections */
+    color: #333; /* Set text color */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    height: auto;
+}
+
+.about-content {
+    max-width: 50%; /* Limit the width of the content to half the container */
+    margin-top: 100px;
+}
+
+.about-image {
+    max-width: 50%; /* Limit the width of the image to half the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 140%; /* Ensure the image fits within its container */
+  
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    /* Add a soft shadow to the image */
+}
+
+.about-heading {
+    font-size: 3rem; /* Heading size */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-points {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+    gap: 20px; /* Add spacing between rows and columns */
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 0; /* Align with the container */
+    padding: 10px;
+    
+}
+
+.about-points li {
+    font-size: 1rem;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align the icon and text */
+    gap: 10px; /* Add spacing between the icon and text */
+    color: #333; /* Text color */
+}
+
+.about-points li::before {
+    content: '✔'; /* Add a checkmark icon */
+    color: #27ae60; /* Green color for the icon */
+    font-size: 1.2rem; /* Slightly larger icon size */
+    font-weight: bold; /* Make the icon bold */
+}
+.about-button {
+    margin-top: 20px; /* Add spacing above the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #00b627; /* Green background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    font-weight: 600; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.about-button:hover {
+    background-color: #1e8449; /* Darker green on hover */
+}

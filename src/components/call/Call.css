@@ -1,0 +1,63 @@
+.call-section {
+    width: 100%; /* Full width */
+    height: 1px; /* Full viewport height */
+    background: linear-gradient(135deg, #00b692, #00604b); /* Green gradient background */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    font-family: 'Inter', sans-serif; /* Use Inter font */
+    margin-top: 100px;
+}
+
+.call-icon-container {
+    width: 300px; /* Container width */
+    height: 45px; /* Adjust height based on content */
+    background-color: #fff; /* White background for the container */
+    border-radius: 50px; /* Rounded corners */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center content vertically */
+    gap: 30px; /* Add 30px gap between columns */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    border: 1px solid #00b692; /* Green border */
+    padding: 20px; /* Add padding inside the container */
+    text-align: center; /* Center the text */
+}
+
+.call-column {
+    flex: 1; /* Default flex value for icon and button columns */
+    text-align: center; /* Center content in each column */
+}
+
+.call-column.middle {
+    flex: 2; /* Make the middle column twice as wide as the others */
+}
+
+.call-icon {
+    font-size: 2rem; /* Icon size */
+    background-color: #00b627;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 50%; /* Green color for the icon */
+}
+
+.call-heading {
+    font-size: 1rem; /* Heading size */
+    font-weight: 500;
+    color: #333; /* Dark text color */
+}
+
+.call-button {
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #00b627;; /* Green background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    font-weight: 300; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.call-button:hover {
+    background-color: #00604b; /* Darker green on hover */
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Import Inter font */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px; /* Add 60px left and right padding */
+    background: linear-gradient(135deg, #ffffff, #2eff7e00);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 50px; /* Reduced height */
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #00b692;
+}
+
+.contact-button {
+    padding: 12px 20px;
+    background-color: #00b627;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #00604b;
+}
