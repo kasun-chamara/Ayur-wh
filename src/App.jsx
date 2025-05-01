@@ -15,14 +15,16 @@ import Footer from './components/Footer/Footer';
 function App() {
   return (
     <>
-      <Header /> {/* Add the Header component */}
-      <Hero /> {/* Add the Hero component */}
-      <About /> {/* Add the About component */}
-      <Call /> {/* Add the Call component */}
+      <Header /> 
+      <Hero />
+      <About /> 
+      {/*  
+     
+      <Call /> 
       <Features />
       <Rating /> 
       <Services />  
-      <Product />
+      <Product /> */}
       {/* <Testimonial /> 
       <Footer />  */}
     </>

@@ -1,40 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); /* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 60px; /* Add 60px left and right padding */
-    background: linear-gradient(135deg, #ffffff, #2eff7e00);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 50px; /* Reduced height */
-    font-family: 'Inter', sans-serif; /* Apply Inter font */
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.nav-links {
-    display: flex;
-    gap: 50px;
+.nav-link {
+  font-weight: 500;
+  color: #333 !important;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+.nav-link:hover {
+  color: #00b692 !important;
 }
 
-.nav-links a:hover {
-    color: #00b692;
+.btn-success {
+  background-color: #00b627;
+  border: none;
+  border-radius: px;
 }
 
-.contact-button {
-    padding: 12px 20px;
-    background-color: #00b627;
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
+.btn-success:hover {
+  background-color: #00604b;
 }
 
-.contact-button:hover {
-    background-color: #00604b;
+/* Set the navbar background to transparent */
+.navbar {
+  background-color: transparent !important; /* !important ensures it overrides default styles */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333; /* Adjust color for text to remain visible */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00b692; /* Adjust color on hover */
+}
+
+.navbar-toggler-icon {
+  color: #333; /* Toggler icon color */
+}
+
+/* Optional: Add a shadow when the navbar is scrolled */
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Light background with slight opacity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
