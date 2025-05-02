@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 .hero-section {
-    background-image: url('../../assets/Herobgsvg.svg'); /* Adjust path if needed */
+    background-image: url('../../assets/Herobgsvg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,8 +11,20 @@
     padding: 60px 0;
     font-family: 'Inter', sans-serif;
     z-index: 0;
-    
   }
+  
+  /* Add fading effect at the bottom */
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px; /* Adjust the height of the fade */
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    z-index: 1;
+  }
+  
 
 .header-in-hero {
   position: absolute;

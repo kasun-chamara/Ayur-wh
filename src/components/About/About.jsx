@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import aboutImage from '../../assets/AboutUs.svg';
 import { FaEye, FaBullseye, FaHeart } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // `once: true` means animate only once
+  }, []);
+
   return (
     <section className="container about-section py-5">
       <div className="row align-items-center">
         {/* Left Section */}
-        <div className="col-12 col-lg-4 about-left animate-left ms-3 ms-lg-0 ">
+        <div className="col-12 col-lg-4 about-left ms-3 ms-lg-0" data-aos="fade-right">
           <h2 className="about-title">About Us</h2>
           <h3 className="about-subtitle">The Story Behind Our Passion for Ayurvedic Healing</h3>
           <hr />
@@ -20,12 +26,12 @@ function About() {
         </div>
 
         {/* Middle Image */}
-        <div className="col-12 col-lg-4 about-center animate-bottom d-flex justify-content-center">
+        <div className="col-12 col-lg-4 about-center d-flex justify-content-center" data-aos="fade-up">
           <img src={aboutImage} alt="About Us" className="about-center-image" />
         </div>
 
         {/* Right Section */}
-        <div className="col-12 col-lg-4 about-right animate-right ms-3 ms-lg-0 mt-5 mt-lg-0">
+        <div className="col-12 col-lg-4 about-right ms-3 ms-lg-0 mt-5 mt-lg-0" data-aos="fade-left">
           <div className="info-block">
             <FaEye className="info-icon" />
             <div>

@@ -9,6 +9,8 @@ import Rating from './components/Rating/Rating';
 import Testimonial from './components/Testimonial/Testimonial';
 import Product from './components/Product/Product';
 import Footer from './components/Footer/Footer';
+import VideoSection from './components/VideoSection/VideoSection';
+import AyurServices from './components/AyurServices/AyurServices';
 
 
 
@@ -17,13 +19,20 @@ function App() {
     <>
       <Header /> 
       <Hero />
-      <About /> 
+      <Call /> 
+      <About />
+      
+      <VideoSection />
+      <AyurServices />
+      {/* <Features />
+      <Rating />  */}
+      {/* <Services />   */}
       {/*  
      
-      <Call /> 
-      <Features />
-      <Rating /> 
-      <Services />  
+      
+     
+     
+      
       <Product /> */}
       {/* <Testimonial /> 
       <Footer />  */}

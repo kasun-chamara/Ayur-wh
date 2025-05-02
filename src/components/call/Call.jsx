@@ -1,23 +1,17 @@
 import React from 'react';
-import './Call.css'; // Import the Call styles
-import { FaPhoneAlt } from 'react-icons/fa'; // Import a phone icon from react-icons
+import './Call.css';
+import { FaHeadset } from 'react-icons/fa';
 
-function Call() {
+const Call = () => {
   return (
-    <section className="call-section">
-      <div className="call-icon-container">
-        <div className="call-column">
-          <FaPhoneAlt className="call-icon" />
-        </div>
-        <div className="call-column middle">
-          <h2 className="call-heading">Start a Call !</h2>
-        </div>
-        <div className="call-column">
-          <button className="call-button">Contact</button>
-        </div>
+    <div className="call-wrapper mt-0">
+      <div className="call-container d-flex justify-content-center align-items-center">
+        <FaHeadset className="call-icon" />
+        <span className="call-text d-none d-md-inline">Start Your Personal Health Plan with Ayur</span>
+        <button className="call-btn ms-3">Get Started</button>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Call;

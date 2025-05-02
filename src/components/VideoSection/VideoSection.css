@@ -1,0 +1,40 @@
+
+
+
+.play-button {
+    font-size: 80px;
+    color: #ffffff;
+    animation: sineMove 2s infinite ease-in-out;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  @keyframes sineMove {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .stats-bg {
+    background-color: #00ae20; /* Ayurvedic green */
+    margin-top: 60px;
+    font-size: 1rem;
+  }
+  
+  .stats-bg {
+    background-color: #ffffff00;
+    font-size: 1rem;
+  }
+  
+  .stat-box {
+    background: linear-gradient(45deg, #00000046, #00000048);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+  }
+  .statusnum{color: #00ae20;}
+  .stat-box:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

@@ -1,81 +1,49 @@
 .features-section {
-    width: 100%; /* Full width */
-    height: 110vh; /* Full viewport height */
-    background: linear-gradient(135deg, #44ff00, #00604b); /* Green gradient background */
-    display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
-    font-family: 'Inter', sans-serif; /* Use Inter font */
-    color: #fff; /* White text color for contrast */
-    margin-top: 100px;
-    border-radius: 300px 0 0 0 ;;
+    background: linear-gradient(135deg, #44ff00, #00604b);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 300px 0 0 0;
 }
 
-.features-content {
-    width: 1000px; /* Set the width of the container */
-    border-radius: 20px; /* Rounded corners */
-    padding: 40px; /* Add padding inside the container */
-    text-align: center; /* Center the text */
+/* For screens less than or equal to 576px (Bootstrap's mobile breakpoint) */
+@media (max-width: 576px) {
+    .features-section {
+        border-radius: 200px 0 0 0;
+    }
 }
+
 
 .features-heading {
-    font-size: 3.5rem; /* Heading size */
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .features-description {
-    font-size: 1.2rem; /* Description size */
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-weight: 100;
-    color: rgb(255, 255, 255);
-}
-
-.features-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Add spacing between the buttons */
-}
-
-.features-large-button {
-    padding: 15px 30px; /* Add padding inside the button */
-    background-color: #00b692; /* Green background color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 1.2rem; /* Font size */
-    font-weight: 600; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.features-large-button:hover {
-    background-color: #00604b; /* Darker green on hover */
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .video-button {
-    width: 80px; /* Circle width */
-    height: 80px; /* Circle height */
-    background-color: #fff; /* White background */
-    border-radius: 50%; /* Make it a circle */
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
     display: flex;
-    justify-content: center; /* Center the icon horizontally */
-    align-items: center; /* Center the icon vertically */
-    position: relative; /* For border animation */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
-    animation: pulse 2s infinite; /* Add pulse animation */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .video-button:hover {
-    background-color: #f0f0f0; /* Slightly lighter background on hover */
+    background-color: #f0f0f0;
 }
 
 .video-icon {
-    font-size: 1.5rem; /* Icon size */
-    color: #00b692; /* Green color for the icon */
+    font-size: 1.5rem;
+    color: #04cd29;
 }
 
 @keyframes pulse {
@@ -90,55 +58,50 @@
     }
 }
 
-.features-cards {
-    display: flex;
-    justify-content: space-between; /* Space between the cards */
-    gap: 20px; /* Add spacing between the cards */
-    margin-top: 40px; /* Add spacing above the cards */
-}
-
 .card {
-    background-color: #fff; /* White background for the card */
-    color: #333; /* Dark text color */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add padding inside the card */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
-    flex: 1; /* Make all cards equal width */
-    text-align: center; /* Center the text in the card */
-    position: relative; /* For positioning the icon */
- 
+    background-color: #ffffff4a;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* centers all content horizontally */
+    text-align: center;
+    height: 100%; /* ensures full height inside the grid */
 }
 
 .card-icon {
-    font-size: 3.5rem; /* Icon size */
-    color: #00d026; /* Green color for the icon */
-    margin-bottom: 10px; /* Add spacing below the icon */
-
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
+
 .card-title {
-    font-size: 1.5rem; /* Title size */
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .card-description {
-    font-size: 1rem; /* Description size */
-    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
 .card-button {
-    padding: 10px 20px; /* Add padding inside the button */
-    background-color: #00b627; /* Green background color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 1rem; /* Font size */
-    font-weight: 600; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    padding: 10px 20px;
+    background-color: #00b627;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .card-button:hover {
-    background-color: #00604b; /* Darker green on hover */
+    background-color: #00604b;
 }

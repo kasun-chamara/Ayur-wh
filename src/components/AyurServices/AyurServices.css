@@ -1,0 +1,61 @@
+/* Wrapper */
+.ayur-services-wrapper {
+    background-color: #ffffff;
+  }
+  
+  /* Box Styling for the Service */
+  .ayur-services-box {
+    overflow: hidden;
+    margin: 20px; /* Margin on all sides */
+    display: flex;
+  }
+  
+  /* Left Column with Animation (from top-left) */
+  .left-column {
+    background-color: #ffffff; /* Light green */
+    min-height: 350px;
+    border-radius: 12px 0 0 12px;
+    border: 1px #00000037 solid;
+    border-radius: 100px 0 0 0;
+  }
+  .sub-srv{color: #00b627;}
+  /* Right Column with Animation (from bottom-right) */
+  .right-column {
+    background-color: #ffffff00; /* Transparent background */
+    min-height: 350px;
+    border-radius: 0 12px 12px 0; /* Rounded corners for right side */
+  }
+  .dis-ser{
+    color: #434343;
+  }
+  
+  /* Service Image */
+  .service-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 767px) {
+    .left-column, .right-column {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Button Styling */
+  .btn-srv {
+    width: 200px; /* Set width to 200px */
+    background-color: #00b627;
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button content */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove default border */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-srv:hover {
+    background-color: #218838; /* Darker green on hover */
+    cursor: pointer; /* Change cursor on hover */
+  }
+  
