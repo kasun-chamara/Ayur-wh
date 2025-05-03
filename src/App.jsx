@@ -11,6 +11,7 @@ import Product from './components/Product/Product';
 import Footer from './components/Footer/Footer';
 import VideoSection from './components/VideoSection/VideoSection';
 import AyurServices from './components/AyurServices/AyurServices';
+import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 
 
 
@@ -23,17 +24,20 @@ function App() {
       <About />
       
       <VideoSection />
+      <Features /> 
+      
       <AyurServices />
-      {/* <Features />
-      <Rating />  */}
-      {/* <Services />   */}
-      {/*  
+     <WhyChooseUs />
+     {/* <Rating />   */}
+      {/* */}
+      {/* <Services />   
+     */}
      
       
      
      
       
-      <Product /> */}
+      {/* <Product />  */}
       {/* <Testimonial /> 
       <Footer />  */}
     </>

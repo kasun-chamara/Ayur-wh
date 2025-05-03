@@ -72,7 +72,45 @@
   font-size: 5rem;
   color: #ffffff;
   flex-shrink: 0;
-  padding: 20px;
+  padding: 10px;
   background-color: #ca8a36;
   border-radius: 40px 0px 0px 0px;
+}
+
+/* Responsive styles for smaller screens (Using Bootstrap classes) */
+@media (max-width: 767.98px) {
+  /* Adjusting margin for smaller screens */
+  .about-left, .about-right {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+
+  .about-left {
+    margin-bottom: 25px; /* Consistent spacing for small screens */
+  }
+
+  .about-right {
+    margin-top: 20px; /* Ensuring equal margin on small screens */
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .info-block {
+    margin-bottom: 20px;
+  }
+
+  .info-icon {
+    font-size: 4.5rem;
+   
+  }
 }

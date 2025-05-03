@@ -10,7 +10,7 @@ const AyurServices = () => {
   }, []);
 
   return (
-    <section className="ayur-services-wrapper py-5">
+    <section className="ayur-services-wrapper ">
       <div className="container">
         <div className="ayur-services-box row mx-2">
           {/* Left Column - FROM TOP */}
@@ -20,16 +20,17 @@ const AyurServices = () => {
             data-aos-offset="200"
             data-aos-duration="1000"
           >
-            <h5 className="fw-bold ms-3 mt-5 sub-srv">Our Services</h5>
-            <h1 className="mb-3 ms-3">Experience the Power of Ayurveda for Better Living.</h1>
-            <p className="ms-3 dis-ser">
+            <h5 className="fw-bold  mt-5 sub-srv">Our Services</h5>
+            <h1 className="mb-3 ">Experience the Power of Ayurveda for Better Living.</h1>
+            <p className="dis-ser">
+            <hr className='me-2 me-lg-0 ' />
             Aliquam pellentesque quam aenean bibendum mollis per. Duis non rhoncus vulputate maximus enim ornare. Diam eu id rutrum lobortis netus neque integer venenatis letius libero a. </p>
-            <button className="btn-srv mt-3 ms-3">Discover More</button>
+            <button className="btn-srv mt-3 ">Discover More</button>
           </div>
 
           {/* Right Column - FROM BOTTOM */}
           <div
-            className="col-md-6 right-column d-flex align-items-center justify-content-center"
+            className="col-md-6 right-column d-flex align-items-center justify-content-center p-0"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-duration="1000"
