@@ -13,6 +13,7 @@ import VideoSection from './components/VideoSection/VideoSection';
 import AyurServices from './components/AyurServices/AyurServices';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Profile from './components/Profile/Profile';
+import FootereHeader from './components/FootereHeader/FootereHeader';
 
 
 
@@ -27,13 +28,17 @@ function App() {
       <Hero />
       <Call /> 
       <About />
+      <Features />  
       <Profile />
-      <AyurServices />
       <VideoSection />
-      <Features />   
+      <AyurServices />
+     
+      
       
       <WhyChooseUs />
-
+      {/* <Product /> */}
+      {/* <FootereHeader /> */}
+      <Footer /> 
   
      {/* <Rating />   */}
       {/* */}
@@ -43,10 +48,9 @@ function App() {
       
      
      
-      
-      {/* <Product />  */}
+  
       {/* <Testimonial /> 
-      <Footer />  */}
+       */}
     </>
   );
 }
