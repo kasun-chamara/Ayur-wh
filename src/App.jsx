@@ -12,6 +12,11 @@ import Footer from './components/Footer/Footer';
 import VideoSection from './components/VideoSection/VideoSection';
 import AyurServices from './components/AyurServices/AyurServices';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
+import Profile from './components/Profile/Profile';
+
+
+
+
 
 
 
@@ -22,12 +27,14 @@ function App() {
       <Hero />
       <Call /> 
       <About />
-      
-      <VideoSection />
-      <Features /> 
-      
+      <Profile />
       <AyurServices />
-     <WhyChooseUs />
+      <VideoSection />
+      <Features />   
+      
+      <WhyChooseUs />
+
+  
      {/* <Rating />   */}
       {/* */}
       {/* <Services />   
