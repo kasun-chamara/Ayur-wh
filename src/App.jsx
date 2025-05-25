@@ -14,6 +14,7 @@ import AyurServices from './components/AyurServices/AyurServices';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Profile from './components/Profile/Profile';
 import FootereHeader from './components/FootereHeader/FootereHeader';
+import ContactForm from './components/ContactForm/contform';
 
 
 
@@ -29,28 +30,28 @@ function App() {
       <Call /> 
       <About />
       <Features />  
-      <Profile />
+   
       <VideoSection />
       <AyurServices />
      
       
       
       <WhyChooseUs />
-      {/* <Product /> */}
-      {/* <FootereHeader /> */}
-      <Footer /> 
+     {/* <Product />  */}
+      {/* <FootereHeader />  */}
+      {/* <Footer />  */}
   
-     {/* <Rating />   */}
+      <Rating />   
       {/* */}
-      {/* <Services />   
-     */}
+      {/* <Services /> */}
+     
      
       
      
      
-  
-      {/* <Testimonial /> 
-       */}
+  <ContactForm />
+      {/* <Testimonial /> */}
+       
     </>
   );
 }

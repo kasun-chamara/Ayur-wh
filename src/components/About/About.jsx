@@ -19,9 +19,7 @@ function About() {
           <h3 className="about-subtitle">The Story Behind Our Passion <br></br>for Ayurvedic Healing</h3>
           <hr className='me-4 me-lg-0 ' />
           <p className="about-description me-4 me-lg-0">
-            Auctor ac nibh ligula consectetur ut pellentesque montes parturient. Gravida letius fusce iaculis amet
-            aliquet natoque erat. Arcu fusce praesent himenaeos fames placerat eu purus id libero congue malesuada.
-          </p>
+          Our journey into Ayurvedic healing began with a deep reverence for the wisdom of nature and the timeless traditions passed down through generations. Inspired by the profound healing powers of herbs, oils, and holistic treatments, we sought to create a sanctuary where ancient knowledge meets modern wellness. </p>
           <button className="about-learn-more mb-5 mb-lg-0">Learn More</button>
         </div>
 
@@ -36,21 +34,21 @@ function About() {
             <FaEye className="info-icon" />
             <div>
               <h5>Our Vision</h5>
-              <p className='me-4 me-lg-0"'> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p>
+              <p className='me-4 mSe-lg-0"'> To be a global sanctuary for authentic Ayurvedic healing, inspiring holistic well-being and harmony for all</p>
             </div>
           </div>
           <div className="info-block">
             <FaBullseye className="info-icon" />
             <div>
               <h5>Our Mission</h5>
-              <p className='me-4 me-lg-0"'> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p>
+              <p className='me-4 me-lg-0"'> To preserve and promote the ancient wisdom of Ayurveda through personalized care, natural therapies, and mindful living practices that nurture the body, mind, and spirit</p>
             </div>
           </div>
           <div className="info-block">
             <FaHeart className="info-icon" />
             <div>
               <h5>Our Motto</h5>
-              <p className='me-4 me-lg-0"'> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p>
+              <p className='me-4 me-lg-0"'> Heal Naturally, Live Fully</p>
             </div>
           </div>
         </div>
