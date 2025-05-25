@@ -19,7 +19,7 @@ function About() {
           <h3 className="about-subtitle">The Story Behind Our Passion <br></br>for Ayurvedic Healing</h3>
           <hr className='me-4 me-lg-0 ' />
           <p className="about-description me-4 me-lg-0">
-          Our journey into Ayurvedic healing began with a deep reverence for the wisdom of nature and the timeless traditions passed down through generations. Inspired by the profound healing powers of herbs, oils, and holistic treatments, we sought to create a sanctuary where ancient knowledge meets modern wellness. </p>
+          Hela Wedakama, Sri Lanka’s indigenous healing system, is a 3,000-year-old tradition rooted in nature, wisdom, and compassion. From ancient royal physicians to the world’s first hospitals in Mihintale, this heritage reflects a deep legacy of care. </p>
           <button className="about-learn-more mb-5 mb-lg-0">Learn More</button>
         </div>
 
@@ -34,21 +34,21 @@ function About() {
             <FaEye className="info-icon" />
             <div>
               <h5>Our Vision</h5>
-              <p className='me-4 mSe-lg-0"'> To be a global sanctuary for authentic Ayurvedic healing, inspiring holistic well-being and harmony for all</p>
+              <p className='me-4 mSe-lg-0"'> To revive, preserve, and promote Sri Lanka’s rich legacy of Hela Wedakama as a global model of natural, holistic healing rooted in ancient wisdom.</p>
             </div>
           </div>
           <div className="info-block">
             <FaBullseye className="info-icon" />
             <div>
               <h5>Our Mission</h5>
-              <p className='me-4 me-lg-0"'> To preserve and promote the ancient wisdom of Ayurveda through personalized care, natural therapies, and mindful living practices that nurture the body, mind, and spirit</p>
+              <p className='me-4 me-lg-0"'> To safeguard and transmit traditional healing practices through education, research, and community service.</p>
             </div>
           </div>
           <div className="info-block">
             <FaHeart className="info-icon" />
             <div>
               <h5>Our Motto</h5>
-              <p className='me-4 me-lg-0"'> Heal Naturally, Live Fully</p>
+              <p className='me-4 me-lg-0"'> Healing through heritage – nature, knowledge, and care.</p>
             </div>
           </div>
         </div>

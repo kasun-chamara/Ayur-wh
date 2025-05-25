@@ -27,12 +27,12 @@
   }
   
   .stat-box {
-    background: linear-gradient(45deg, #00000046, #00000048);
+    background-color: #7b8c45;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
     border-radius: 12px;
   }
-  .statusnum{color: #00ae20;}
+  .statusnum{color: #ffffff;}
   .stat-box:hover {
     transform: translateY(-5px);
     background-color: rgba(255, 255, 255, 0.2);

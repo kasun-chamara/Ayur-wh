@@ -3,7 +3,13 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-
+.header-logo-img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 .nav-link {
   font-weight: 500;
   color: #333 !important;

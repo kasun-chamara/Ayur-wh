@@ -1,10 +1,11 @@
 .testimonial-section {
     width: 100%;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #e0ffe5, #c8f7d4); /* Subtle gradient background */
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Subtle gradient background */
     font-family: 'Inter', sans-serif;
     text-align: center;
     box-sizing: border-box;
+    margin-top: 30px;
 }
 
 .testimonial-title {
@@ -22,33 +23,51 @@
     display: block;
     width: 80px;
     height: 4px;
-    background-color: #00b692;
+    
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
+/* ...existing code... */
 .testimonial-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap; /* Ensure cards wrap to the next line on smaller screens */
-    max-width: 1200px;
+    max-width: 1300px; /* Changed from 1200px to 1300px */
     margin: 0 auto; /* Center the container */
     box-sizing: border-box;
 }
-
+/* ...existing code... */
+/* ...existing code... */
+/* ...existing code... */
 .testimonial-card {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this for absolute positioning of badge */
+    background: #e2eedb;
+    border-radius: 55px 0 0 0 ;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
     padding: 30px;
-    width: 320px;
+    flex: 1 1 350px;
+    max-width: 400px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
     overflow: hidden;
 }
+/* ...existing code... */
+
+.testimonial-badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;   /* Changed from left: 18px; */
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    /* Optional: add a drop shadow */
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.10));
+}
+/* ...existing code... */
+/* ...existing code... */
 
 .testimonial-card:hover {
     transform: translateY(-10px);
@@ -56,12 +75,12 @@
 }
 
 .testimonial-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
     object-fit: cover;
-    border: 3px solid #00b692;
+    border: 3px solid #7b8c45;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,7 +98,18 @@
     line-height: 1.6;
     font-style: italic;
 }
+/* ...existing code... */
+.testimonial-stars {
+    margin-bottom: 12px;
+}
 
+.star {
+    color: #7b8c45;
+    font-size: 1.2rem;
+    margin: 0 2px;
+    vertical-align: middle;
+}
+/* ...existing code... */
 /* Responsive Design */
 @media (max-width: 768px) {
     .testimonial-container {

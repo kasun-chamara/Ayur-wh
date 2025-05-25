@@ -1,8 +1,9 @@
 import './App.css';
-import Header from './components/header/Header'; // Import the Header component
-import Hero from './components/hero/Hero'; // Import the Hero component
-import About from './components/about/About'; // Import the About component
-import Call from './components/call/Call'; // Import the Call component
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/header/Header';
+import Hero from './components/hero/Hero';
+import About from './components/about/About';
+import Call from './components/call/Call';
 import Features from './components/features/Features';
 import Services from './components/Services/Services';
 import Rating from './components/Rating/Rating';
@@ -15,44 +16,38 @@ import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Profile from './components/Profile/Profile';
 import FootereHeader from './components/FootereHeader/FootereHeader';
 import ContactForm from './components/ContactForm/contform';
+import ProductPage from './components/ProductPage/ProductPage'; // Import your ProductPage
 
-
-
-
-
-
+function Home() {
+  return (
+    <>
+      <Hero />
+      <Call />
+      <Profile />
+      <About />
+      <Features />
+      <WhyChooseUs />
+      <VideoSection />
+      <AyurServices />
+      <Product />
+      <ContactForm />
+      <Rating />
+      <Testimonial />
+      <FootereHeader />
+    </>
+  );
+}
 
 function App() {
   return (
-    <>
-      <Header /> 
-      <Hero />
-      <Call /> 
-      <About />
-      <Features />  
-   
-      <VideoSection />
-      <AyurServices />
-     
-      
-      
-      <WhyChooseUs />
-     {/* <Product />  */}
-      {/* <FootereHeader />  */}
-      {/* <Footer />  */}
-  
-      <Rating />   
-      {/* */}
-      {/* <Services /> */}
-     
-     
-      
-     
-     
-  <ContactForm />
-      {/* <Testimonial /> */}
-       
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<ProductPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
