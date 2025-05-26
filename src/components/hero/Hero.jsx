@@ -41,7 +41,7 @@ function Hero() {
               style={{ lineHeight: '1' }}
             >
               Embrace the healing wisdom of{' '}
-              <b style={{ fontSize: '1.5em' }}>Ancient Hela medicine</b>
+              <b style={{ fontSize: '1.5em' }}>Ancient Hela medicine....</b>
             </h2>
             <p className="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
               Blending the Ancient Healing Traditions of Hela Osu with the Wellness Needs of the Modern World
