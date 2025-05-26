@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import bgImage from 'src/assets/vdobg.png';
+import bgImage from '../../assets/Vdobg.png';
 import './VideoSection.css';
 
 const VideoSection = () => {
