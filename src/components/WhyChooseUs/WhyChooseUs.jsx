@@ -11,19 +11,19 @@ function WhyChooseUs() {
       id: '1',
       icon: <FaSpa className="feature-icon" />,
       title: 'Authentic Ayurvedic Formulas',
-      desc: 'Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.'
+      desc: 'Our remedies follow ancient Hela Wedakama traditions, using trusted formulas passed down through generations of expert healers.'
     },
     {
       id: '2',
       icon: <FaLeaf className="feature-icon" />,
       title: '100% Natural Ingredients',
-      desc: 'Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.'
+      desc: 'We use only pure, locally sourced herbs and plants—free from chemicals, additives, and harmful side effects.'
     },
     {
       id: '3',
       icon: <FaUserMd className="feature-icon" />,
       title: 'Personalized Wellness Plans',
-      desc: 'Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.'
+      desc: 'Each treatment is tailored to your body and lifestyle, offering holistic care for lasting physical and mental balance.'
     }
   ];
 
@@ -34,12 +34,11 @@ function WhyChooseUs() {
           {/* Left side */}
           <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
             <h4 className="why-subheading text-center text-lg-start mb-3">
-              Affordable Herbal Supplements <br /> for a Healthier Lifestyle
+            Affordable Herbal Supplements for Natural Wellness
             </h4>
             <hr className='me-0 me-lg-0 ' />
             <p className="why-description text-center text-lg-start mb-4">
-              Aliquam pellentesque quam aenean bibendum mollis per. Duis non rhoncus vulputate maximus enim ornare.
-              Diam eu id rutrum lobortis netus neque integer venenatis letius libero a.
+              At Waharaka Hela Osu, we provide 100% natural herbal remedies rooted in Hela Wedakama. Backed by centuries of healing wisdom, our products are safe, effective, and made to restore both body and mind.
             </p>
 
             {/* Show this tab view on mobile and tablet (sm and md) */}

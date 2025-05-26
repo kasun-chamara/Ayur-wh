@@ -108,3 +108,33 @@ body, html {
     margin-bottom: 15px;
   }
   
+
+  .features-social .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #fff;
+  color: #701515;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin: 0 8px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.features-social .social-icon.facebook:hover {
+  background: #1877f3;
+  color: #fff;
+}
+.features-social .social-icon.youtube:hover {
+  background: #ff0000;
+  color: #fff;
+}
+.features-social .social-icon.tiktok:hover {
+  background: #000;
+  color: #fff;
+}

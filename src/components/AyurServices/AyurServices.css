@@ -1,60 +1,117 @@
 /* Wrapper */
 
-  /* Box Styling for the Service */
-  .ayur-services-box {
-    overflow: hidden;
-    margin: 20px; /* Margin on all sides */
-    display: flex;
-  }
-  
-  /* Left Column with Animation (from top-left) */
-  .left-column {
-    background-color: #ffffff; /* Light green */
-    min-height: 350px;
-    border-radius: 12px 0 0 12px;
-    
+.ayur-services-box {
+  overflow: hidden;
+  margin: 20px; /* Margin on all sides */
+  display: flex;
+}
 
-    border-radius: 100px 0 0 0;
+/* Left Column with Animation (from top-left) */
+.left-column {
+  background-color: #ffffff;
+  min-height: 350px;
+  border-radius: 100px 0 0 0;
+}
+.sub-srv {
+  color: #701515;
+}
+/* Right Column with Animation (from bottom-right) */
+.right-column {
+  background-color: #ffffff00;
+  min-height: 250px;
+  border-radius: 0 12px 12px 0;
+}
+.dis-ser {
+  color: #434343;
+}
+
+/* Service Image */
+.service-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 767px) {
+  .left-column, .right-column {
+    margin-bottom: 20px;
   }
-  .sub-srv{color: #00b627;}
-  /* Right Column with Animation (from bottom-right) */
-  .right-column {
-    background-color: #ffffff00; /* Transparent background */
-    min-height: 250px;
-    border-radius: 0 12px 12px 0; /* Rounded corners for right side */
-  }
-  .dis-ser{
-    color: #434343;
-  }
-  
-  /* Service Image */
-  .service-image {
-    max-width: 100%;
-    height: auto;
-    
-  }
-  
-  /* Responsiveness for smaller screens */
-  @media (max-width: 767px) {
-    .left-column, .right-column {
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Button Styling */
-  .btn-srv {
-    width: 200px; /* Set width to 200px */
-    background-color: #00b627;
-    color: white; /* White text color */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px 20px; /* Padding for button content */
-    font-size: 16px; /* Font size */
-    border: none; /* Remove default border */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .btn-srv:hover {
-    background-color: #218838; /* Darker green on hover */
-    cursor: pointer; /* Change cursor on hover */
-  }
-  
+}
+
+/* Button Styling */
+.btn-srv {
+  width: 200px;
+  background-color: #701515;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-srv:hover {
+  background-color: #701515;
+  cursor: pointer;
+}
+
+/* Modal Overlay for AyurServices */
+.ayur-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.ayur-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ayur-modal-iframe {
+  width: 800px;
+  max-width: 80vw;
+  height: 500px;
+  max-height: 70vh;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.ayur-modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #701515;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blur effect when modal is open */
+.ayur-blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
+}

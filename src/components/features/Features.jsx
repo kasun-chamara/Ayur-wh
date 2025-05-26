@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Features.css';
-import { FaPlay, FaLeaf, FaSpa, FaHeartbeat } from 'react-icons/fa';
+import { FaFacebookF, FaYoutube, FaTiktok } from 'react-icons/fa6';
 
 function Features() {
   useEffect(() => {
@@ -12,22 +12,44 @@ function Features() {
   return (
     <section className="features-section">
       <div className="container text-center py-5">
-        {/* Heading, description, and play button animation from top */}
+        {/* Heading and description */}
         <div data-aos="fade-down">
           <h1 className="features-heading mb-3">
-            Join our growing <br></br> community of 20,000+ Ayurveda enthusiasts!
+            Thousands Have Chosen Natural Healing Will You?<br />Your Journey to Natural Health Starts Here.
           </h1>
           <p className="features-description mb-4">
-            Ultrices quam mattis posuere porttitor tellus rhoncus tristique. Primis aliquam dignissim interdum vel suscipit sodales.
+            Stay connected with us, Experience Hela Healing Beyond the social media
           </p>
-          <div className="features-buttons mb-5 d-flex justify-content-center">
-            <div className="video-button">
-              <FaPlay className="video-icon" />
-            </div>
+          <div className="features-social mb-5 d-flex justify-content-center gap-4">
+            <a
+              href="https://www.facebook.com/share/1AZEUgLUXX/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon facebook"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://youtu.be/AwG47r_XldE?si=y93t9pdqadww44V4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon youtube"
+              aria-label="YouTube"
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.tiktok.com/@waharaka.hela.osu?_t=ZS-8wftxhiy0os&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon tiktok"
+              aria-label="TikTok"
+            >
+              <FaTiktok />
+            </a>
           </div>
         </div>
-
-       
       </div>
     </section>
   );

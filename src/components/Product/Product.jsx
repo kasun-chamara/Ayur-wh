@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Product.css';
 
-// You must import images for React to bundle them correctly!
 import img1 from '../../assets/01.png';
 import img2 from '../../assets/02.png';
 import img3 from '../../assets/03.png';
@@ -12,14 +11,14 @@ import img7 from '../../assets/07.png';
 import img8 from '../../assets/07.png';
 
 const products = [
-  { title: 'Product 1', img: img1 },
-  { title: 'Product 2', img: img2 },
-  { title: 'Product 3', img: img3 },
-  { title: 'Product 4', img: img4 },
-  { title: 'Product 5', img: img5 },
-  { title: 'Product 6', img: img6 },
-  { title: 'Product 7', img: img7 },
-  { title: 'Product 8', img: img8 },
+  { title: 'ප්‍රාණ වර්ධන තෙල', img: img1, price: 'Rs. 580' },
+  { title: 'නහර ගැට සමන තෙල', img: img2, price: 'Rs. 560' },
+  { title: 'වහරක උණ පැණිය', img: img3, price: 'Rs. 350' },
+  { title: 'සඳුනිකා හෙයා ඔයිල්', img: img4, price: 'Rs. 1480' },
+  { title: 'වහරක මුල් ඔසුව', img: img5, price: 'Rs. 3840' },
+  { title: 'වහරක සුවඳ ධූපය', img: img6, price: 'Rs. 380' },
+  { title: 'අජීර්ණ සමන පේයාව', img: img7, price: 'Rs. 70' },
+  { title: 'අජීර්ණ සමන පේයාව', img: img8, price: 'Rs. 70' },
 ];
 
 function Product() {
@@ -30,7 +29,7 @@ function Product() {
       <div className="product-main-container">
         <div className="product-left"></div>
         <div className="product-right product-right-single">
-          <h2 className="product-topic">Product Title</h2>
+          <h1 className="product-topic">Our Products</h1>
           <p className="product-description">
             The Indigenous Medicine of Sri Lanka or "Hela Wedakama" as it is known is Sri
             Lanka’s unique centuries old heritage of a series of ancient indigenous medical
@@ -53,12 +52,23 @@ function Product() {
             onMouseLeave={() => setHoveredIdx(null)}
           >
             <div className="product-card-title">{item.title}</div>
+            {/* Price under the name */}
+            {item.price && (
+              <div className="product-card-price">{item.price}</div>
+            )}
             <div className="product-card-img-wrapper">
               <img src={item.img} alt={item.title} className="product-card-img" />
               <div className={`sheen${hoveredIdx === idx ? ' active' : ''}`}></div>
-              {hoveredIdx === idx && (
-                <button className="product-card-btn">Buy now</button>
-              )}
+             {hoveredIdx === idx && (
+  <a
+    href="https://wa.me/94761387620"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <button className="product-card-btn">Buy now</button>
+  </a>
+)}
             </div>
           </div>
         ))}

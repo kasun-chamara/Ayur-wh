@@ -1,7 +1,7 @@
 .footer-header-bar {
     width: 100%;
     height: 150px;
-    background: linear-gradient(90deg, #e0ffe8 0%, #ffffff 100%);
+    background: linear-gradient(90deg, #faedb3 0%, #ffffff 100%);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
 
 .footer-header-btn {
     padding: 10px 28px;
-    background: #00b627;
+    background: #701515;
     color: #fff;
     border: none;
     border-radius: 22px;
@@ -42,5 +42,5 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .footer-header-btn:hover {
-    background: linear-gradient(90deg, #009e7a 0%, #5e6c2e 100%);
+     background: #701515;
 }

@@ -1,9 +1,11 @@
 .footer-section {
-  background-image: url('https://st4.depositphotos.com/4243035/31464/i/450/depositphotos_314649354-stock-photo-green-leaves-pattern-background-flat.jpg');
-  color: #ffffff; /* Main text color */
+  background-image: url('https://img.freepik.com/free-photo/dried-twigs-dark-surroundings_23-2147811222.jpg?ga=GA1.1.2110573684.1739466239&semt=ais_items_boosted&w=740');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
   padding: 50px 20px;
   font-family: 'Inter', sans-serif;
-  
 }
 
 .footer-container {
@@ -31,14 +33,14 @@
 .footer-contact h3 {
   font-size: 1.6rem;
   margin-bottom: 15px;
-  color: #00ff77;
+  color: #009f4a;
   display: flex;
   align-items: center;
 }
 
 /* Leaf Icon Styling */
 .leaf-icon {
-  color: #00ff77;
+  color: #00b353;
   margin-right: 10px;
   font-size: 1rem;
   vertical-align: middle;

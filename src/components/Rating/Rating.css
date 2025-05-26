@@ -26,7 +26,13 @@
   .rating-content h2 {
     margin: 30px;
     font-size: 2.5rem;
-    color: #006735;
+   color: #701515;
+  }
+   .rating-content h4 {
+    margin: 30px;
+    font-size: 1.5rem;
+    color: #414141;
+    margin-top: -10px;
   }
   
   .rating-content p {
@@ -37,7 +43,7 @@
   
   .rating-button {
     padding: 10px 20px; /* Add padding inside the button */
-    background-color: #00b627; /* Green background color */
+    background-color: #701515;; /* Green background color */
     color: #fff; /* White text color */
     border: none; /* Remove border */
     border-radius: 8px; /* Rounded corners */

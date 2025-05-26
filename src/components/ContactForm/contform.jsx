@@ -6,18 +6,17 @@ const ContactForm = () => (
   <div className="contact-container">
     <div className="contact-left">
       <div className="benefit-content">
-        <h5 className="mt-5 pt-5 ms-5">Benefit</h5>
-        <h1 className="ms-5">Nature’s secret for your health.</h1>
+        {/* <h5 className="mt-5 pt-5 ms-5">Benefit</h5> */}
+        <h1 className="ms-5 mt-3">Connect with Waharaka Hela Osu</h1>
         <p className="ms-5 main-sub">
-          Aliquam pellentesque quam aenean bibendum mollis per. Duis non rhoncus vulputate maximus enim ornare. Diam eu id rutrum lobortis netus neque integer venenatis letius libero a.
-        </p>
+          Reach out to our dedicated team of professionals committed to restoring wellness through authentic Sri Lankan indigenous medicine. Whether you need information, consultation, or guidance on your healing journey, we are here for you. </p>
         <ul className="benefit-list ms-5">
           <li>
             <span className="benefit-list-icon"><MdEco /></span>
             <div>
              <strong className="main-sub-il">Real organic herbal</strong>
               <br />
-              <p className=" main-sub-icon"> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p>
+              <p className=" main-sub-icon"> 100% natural remedies made from indigenous herbs using traditional, time-tested healing methods</p>
             </div>
           </li>
           <li>
@@ -25,7 +24,7 @@ const ContactForm = () => (
             <div>
               <strong className="main-sub-il">Professional Therapist</strong>
               <br />
-             <p className=" main-sub-icon"> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p> 
+             <p className=" main-sub-icon"> Expert doctors combining modern and Hela medicine for effective, holistic treatment.</p> 
             </div>
           </li>
           <li>
@@ -33,7 +32,7 @@ const ContactForm = () => (
             <div>
              <strong className="main-sub-il">Free Consultations</strong>
               <br />
-             <p className="main-sub-icon"> Auctor elementum etiam congue gravida posuere nostra inceptos scelerisque mus consequat imperdiet.</p> 
+             <p className="main-sub-icon"> Get personalized indigenous medical advice from certified doctors, anytime, anywhere.</p> 
             </div>
           </li>
         </ul>
@@ -54,8 +53,8 @@ const ContactForm = () => (
         <select required>
           <option value="">Select Service</option>
           <option value="consultation">Consultation</option>
-          <option value="therapy">Therapy</option>
-          <option value="massage">Massage</option>
+          {/* <option value="therapy">Therapy</option>
+          <option value="massage">Massage</option> */}
           <option value="other">Other</option>
         </select>
         <textarea placeholder="Your Comment" required />

@@ -34,15 +34,15 @@ function Footer() {
         {/* Contact Section with Leaf Icon */}
         <div className="footer-contact">
           <h3>Contact Us</h3>
-          <p><FaLeaf className="leaf-icon" /> Email: support@ayurveda.com</p>
-          <p><FaLeaf className="leaf-icon" /> Phone: +1 234 567 890</p>
-          <p><FaLeaf className="leaf-icon" /> Address: 123 Ayurvedic Lane, Wellness City</p>
+          <p><FaLeaf className="leaf-icon" /> Email: waharakahelaosu@gmail.com</p>
+          <p><FaLeaf className="leaf-icon" /> Phone: +94 77 7770275</p>
+          <p><FaLeaf className="leaf-icon" /> Athurugiriya Road, Homagama</p>
         </div>
       </div>
 
       {/* Bottom Copyright */}
       <div className="footer-bottom">
-        <p>&copy; 2025 Ayurveda. All Rights Reserved.</p>
+        <p>&copy; All Rights Reserved by ecodeslab.</p>
       </div>
     </footer>
   );

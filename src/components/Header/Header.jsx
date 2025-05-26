@@ -51,7 +51,10 @@ function Header() {
             </li>
           </ul>
           <div className="d-flex justify-content-center d-lg-block mt-3 mt-lg-0 mb-3 mb-lg-0">
-             <button className="btn btn-success  px-4">Contact</button>
+             <a href="https://wa.me/94761387620" target="_blank">
+  <button className="btn btn-success px-4">Book Now</button>
+</a>
+
           </div>
         </div>
       </nav>

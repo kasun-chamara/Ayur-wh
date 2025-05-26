@@ -14,7 +14,7 @@
 .about-title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #00b627;
+  color: #701515;
   margin-bottom: 10px;
 }
 
@@ -34,7 +34,7 @@
 
 .about-learn-more {
   padding: 10px 25px;
-  background-color: #00b627;
+  background-color: #701515;
   color: white;
   border: none;
   border-radius: 8px;
@@ -44,7 +44,7 @@
 }
 
 .about-learn-more:hover {
-  background-color: #1e8449;
+  background-color: #701515;
 }
 
 /* Center Image */
@@ -52,6 +52,7 @@
   width: 100%;
   max-height: 550px;
   object-fit: contain;
+  z-index: -1;
 }
 
 /* Right Section */
@@ -113,4 +114,65 @@
     font-size: 4.5rem;
    
   }
+}
+
+/* Modal Overlay for About Section */
+.about-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.about-modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-modal-iframe {
+  width: 800px;
+  max-width: 80vw;
+  height: 500px;
+  max-height: 70vh;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.about-modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: #701515;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Blur effect when modal is open */
+.about-blur {
+  filter: blur(6px);
+  pointer-events: none;
+  user-select: none;
 }

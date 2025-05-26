@@ -25,7 +25,7 @@ const VideoSection = () => {
         <div className="play-button mb-4">
           <i className="bi bi-play-circle-fill"></i>
         </div>
-        <h1 className="display-4">Welcome to <br></br>Our Ayurveda Experience</h1>
+        <h1 className="display-4">Welcome to <br></br>Waharaka Hela Osa Weda Madura..!</h1>
         <p className="lead">Discover healing through ancient wisdom.</p>
       </div>
 
@@ -35,20 +35,20 @@ const VideoSection = () => {
           <div className="row justify-content-center text-center text-white">
             <div className="col-6 col-md-3 mb-3">
               <div className="stat-box p-3">
-                <h2 className="fw-bold display-4 statusnum">91</h2>
-                <p className="mb-0">Projects Done</p>
+                <h2 className="fw-bold display-4 statusnum">20+</h2>
+                <p className="mb-0">Products</p>
               </div>
             </div>
             <div className="col-6 col-md-3 mb-3">
               <div className="stat-box p-3">
-                <h2 className="fw-bold display-4 statusnum">84K+</h2>
+                <h2 className="fw-bold display-4 statusnum">4.4K+</h2>
                 <p className="mb-0">Happy Clients</p>
               </div>
             </div>
             <div className="col-6 col-md-3 mb-3">
               <div className="stat-box p-3">
-                <h2 className="fw-bold display-4 statusnum">42+</h2>
-                <p className="mb-0">Company Support</p>
+                <h2 className="fw-bold display-4 statusnum">10</h2>
+                <p className="mb-0">Branches</p>
               </div>
             </div>
             <div className="col-6 col-md-3 mb-3">
