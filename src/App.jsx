@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Hero from './components/hero/Hero';
-import About from './components/about/About';
+import About from './components/About/About';
 import Call from './components/call/Call';
 import Features from './components/features/Features';
 import Services from './components/Services/Services';

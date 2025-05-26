@@ -6,7 +6,7 @@ function ContactUs() {
   return (
     <div className="contactus-page-wrapper">
       <div className="contactus-heading-center">
-        <h1 className="contactus-main-title">Find and Connect with Waharaka Hela Osu</h1>
+        <h1 className="contactus-main-title">Find and Connect with Waharaka Hela Osu.</h1>
         <p className="contactus-main-desc">
           Reach out to us or visit one of our island-wide branches to begin your journey to holistic healing. Use the map below to find your nearest Waharaka Hela Osu center and connect with our expert team for consultations, treatments, or information.</p>
       </div>
