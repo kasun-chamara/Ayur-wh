@@ -47,8 +47,8 @@ function Header() {
               <a className="nav-link" href="#about">About Us</a>
             </li>
             <li className="nav-item px-2">
-              <a className="nav-link" href="#contact">Contact Us</a>
-            </li>
+  <Link className="nav-link" to="/contact">Contact Us</Link>
+</li>
           </ul>
           <div className="d-flex justify-content-center d-lg-block mt-3 mt-lg-0 mb-3 mb-lg-0">
              <a href="https://wa.me/94761387620" target="_blank">

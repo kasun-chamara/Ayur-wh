@@ -16,7 +16,8 @@ import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Profile from './components/Profile/Profile';
 import FootereHeader from './components/FootereHeader/FootereHeader';
 import ContactForm from './components/ContactForm/contform';
-import ProductPage from './components/ProductPage/ProductPage'; // Import your ProductPage
+import ProductPage from './components/ProductPage/ProductPage';
+import ContactUs from './components/ContactUs/ContactUs'; // <-- Add this line
 
 function Home() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductPage />} />
+        <Route path="/contact" element={<ContactUs />} /> {/* Add this line */}
       </Routes>
       <Footer />
     </Router>

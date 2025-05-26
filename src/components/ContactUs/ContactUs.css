@@ -1,0 +1,36 @@
+.contactus-container {
+  max-width: 600px;
+  margin: 60px auto 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contactus-title {
+  font-size: 2.2rem;
+  color: #701515;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contactus-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.contactus-details p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+.contactus-details a {
+  color: #009e7a;
+  text-decoration: none;
+}
+
+.contactus-details a:hover {
+  text-decoration: underline;
+}
