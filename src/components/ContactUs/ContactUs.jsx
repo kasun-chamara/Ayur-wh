@@ -1,17 +1,50 @@
 import React from 'react';
+import ContactForm from '../ContactForm/contform';
 import './ContactUs.css';
 
 function ContactUs() {
   return (
-    <div className="contactus-container">
-      <h1 className="contactus-title">Contact Us</h1>
-      <p className="contactus-desc">
-        If you have any questions, suggestions, or want to reach out, please fill out the form below or contact us directly.
-      </p>
-      <div className="contactus-details">
-        <p><strong>Phone:</strong> <a href="tel:+94761387620">+94 76 138 7620</a></p>
-        <p><strong>Email:</strong> <a href="mailto:info@waharaka.com">info@waharaka.com</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/94761387620" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></p>
+    <div className="contactus-page-wrapper">
+      <div className="contactus-heading-center">
+        <h1 className="contactus-main-title">Connect with Waharaka Hela Osu</h1>
+        <p className="contactus-main-desc">
+          Reach out to our dedicated team of professionals committed to restoring wellness through authentic Sri Lankan indigenous medicine. Whether you need information, consultation, or guidance on your healing journey, we are here for you.
+        </p>
+      </div>
+      <div className="contactus-container">
+        <div className="contactus-half contactus-half-left">
+          <div className="map-and-label">
+            <iframe
+              title="Map 1"
+              src="https://www.google.com/maps?q=6.055667041449875,80.21406566256438&z=15&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, borderRadius: '12px', minHeight: '350px' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div className="branch-label">Galle Branch</div>
+          </div>
+        </div>
+        <div className="contactus-half contactus-half-right">
+          <div className="map-and-label">
+            <iframe
+              title="Map 2"
+              src="https://www.google.com/maps?q=6.848797049644052,80.00265907781757&z=15&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, borderRadius: '12px', minHeight: '350px' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div className="branch-label">Homagama Branch</div>
+          </div>
+        </div>
+      </div>
+      <div className="contactform-fullwidth">
+        <ContactForm />
       </div>
     </div>
   );

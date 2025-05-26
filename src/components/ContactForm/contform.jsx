@@ -22,7 +22,8 @@ const ContactForm = () => (
           <li>
             <span className="benefit-list-icon"><MdPerson /></span>
             <div>
-              <strong className="main-sub-il">Professional Therapist</strong>
+              <strong className="main-sub-il">Professional Doctors
+</strong>
               <br />
              <p className=" main-sub-icon"> Expert doctors combining modern and Hela medicine for effective, holistic treatment.</p> 
             </div>
@@ -30,7 +31,8 @@ const ContactForm = () => (
           <li>
             <span className="benefit-list-icon"><MdChat /></span>
             <div>
-             <strong className="main-sub-il">Free Consultations</strong>
+             <strong className="main-sub-il">Online Consultation
+</strong>
               <br />
              <p className="main-sub-icon"> Get personalized indigenous medical advice from certified doctors, anytime, anywhere.</p> 
             </div>
