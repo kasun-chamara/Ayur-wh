@@ -62,7 +62,7 @@ body, html {
   
   @keyframes pulse {
     0% {
-      box-shadow: 0 0 0 0 rgb(4, 255, 0);
+      box-shadow: 0 0 0 0 #701515;
     }
     70% {
       box-shadow: 0 0 0 20px rgba(0, 182, 146, 0);

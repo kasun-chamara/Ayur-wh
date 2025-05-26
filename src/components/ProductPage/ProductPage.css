@@ -143,3 +143,9 @@
     border-radius: 0 0 22px 22px;
   }
 }
+
+/* Add this at the end of ProductPage.css */
+.productpage-container .navbar,
+.productpage-container .bg-light.shadow-sm.navbar {
+  box-shadow: none !important;
+}

@@ -16,7 +16,7 @@ function Header() {
   }, []);
 
   return (
-    <header className={`bg-light shadow-sm navbar ${scrolling ? 'scrolled' : ''}`}>
+    <header className={`bg-light  navbar ${scrolling ? 'scrolled' : ''}`}>
       <nav className="navbar navbar-expand-lg navbar-light container">
         <Link className="navbar-brand fw-bold ms-3" to="/">
           <img src={logoImg} alt="Logo" className="header-logo-img" />
@@ -51,7 +51,7 @@ function Header() {
             </li>
           </ul>
           <div className="d-flex justify-content-center d-lg-block mt-3 mt-lg-0 mb-3 mb-lg-0">
-             <button className="btn btn-success rounded-pill px-4">Contact</button>
+             <button className="btn btn-success  px-4">Contact</button>
           </div>
         </div>
       </nav>

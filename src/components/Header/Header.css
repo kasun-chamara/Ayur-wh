@@ -16,17 +16,18 @@ body {
 }
 
 .nav-link:hover {
-  color: #00b692 !important;
+  color: #701515 !important;
 }
 
 .btn-success {
-  background-color: #00b627;
+  background-color: #701515;
   border: none;
-  border-radius: px;
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .btn-success:hover {
-  background-color: #00604b;
+  background-color: #4d0f0f; /* Optional: a darker shade for hover */
 }
 
 /* Set the navbar background to transparent */
@@ -39,7 +40,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #00b692; /* Adjust color on hover */
+  color: #701515; /* Adjust color on hover */
 }
 
 .navbar-toggler-icon {
@@ -49,5 +50,5 @@ body {
 /* Optional: Add a shadow when the navbar is scrolled */
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.9); /* Light background with slight opacity */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }

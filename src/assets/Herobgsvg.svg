@@ -17,7 +17,7 @@
 </pattern>
 <linearGradient id="paint0_linear_266_21" x1="720" y1="0" x2="720" y2="892" gradientUnits="userSpaceOnUse">
 <stop offset="0.2818" stop-color="white"/>
-<stop offset="1" stop-color="#DCFFD5"/>
+<stop offset="1" stop-color="#FFEA96"/>
 </linearGradient>
 <clipPath id="clip0_266_21">
 <rect width="1440" height="892" fill="white"/>
