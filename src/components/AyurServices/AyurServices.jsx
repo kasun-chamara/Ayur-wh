@@ -21,7 +21,7 @@ const AyurServices = () => {
           <div className="ayur-services-box row mx-2">
             {/* Left Column - FROM TOP */}
             <div
-              className="col-md-6 left-column d-flex flex-column justify-content-center text-black p-4"
+              className="col-md-6 left-column d-flex flex-column justify-content-center text-black p-4 mt-5"
               data-aos="fade-down"
               data-aos-offset="200"
               data-aos-duration="1000"

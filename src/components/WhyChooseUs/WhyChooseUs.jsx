@@ -28,7 +28,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section className="why-choose-us-section py-5">
+    <section className="why-choose-us-section py-5 mt-4">
       <div className="containerwhy container">
         <div className="row align-items-center justify-content-between">
           {/* Left side */}

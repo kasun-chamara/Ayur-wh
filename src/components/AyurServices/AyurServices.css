@@ -4,6 +4,7 @@
   overflow: hidden;
   margin: 20px; /* Margin on all sides */
   display: flex;
+  margin-top: 80px;
 }
 
 /* Left Column with Animation (from top-left) */
@@ -35,7 +36,12 @@
 @media (max-width: 767px) {
   .left-column, .right-column {
     margin-bottom: 20px;
+    
   }
+  .ayur-services-box {
+
+  margin-top: -20px;
+}
 }
 
 /* Button Styling */

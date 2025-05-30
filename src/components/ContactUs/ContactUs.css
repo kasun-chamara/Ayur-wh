@@ -13,12 +13,30 @@
   font-weight: bold;
   margin-bottom: 16px;
 }
+
+.contactus-main-desc {
+  font-size: 1.15rem;
+  color: #444;
+  max-width: 700px;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.contactus-maps-container {
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  
+}
+
 .map-and-label {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
+
 .branch-label {
   margin-top: 11px;
   font-size: 1.5rem;
@@ -26,59 +44,40 @@
   color: #2e2e2e;
   text-align: center;
 }
-.contactus-main-desc {
-  font-size: 1.15rem;
-  color: #444;
-  max-width: 700px;
-  margin-bottom: 0;
-}
 
-.contactus-container {
-  max-width: 1200px;
-  margin: 20px auto 40px auto;
-  padding: 32px 24px;
-  background: #fff;
-  border-radius: 18px;
-  
-  text-align: center;
-  height: 500px;
-  display: flex;
-  gap: 24px;
-}
-
-.contactus-half {
-  flex: 1 1 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.contactus-half iframe {
+iframe {
   width: 100%;
-  height: 100%;
-  min-height: 350px;
+  min-height: 300px;
   border-radius: 12px;
   border: none;
 }
 
+/* Responsive tweaks for mobile */
 @media (max-width: 900px) {
-  .contactus-container {
-    flex-direction: column;
-    height: auto;
+  .contactus-maps-container {
+    padding: 16px 4px;
+    margin-top: 20px;
   }
-  .contactus-half {
-    height: 200px;
-    margin-bottom: 16px;
+  .branch-label {
+    font-size: 1.1rem;
   }
-  .contactus-half iframe {
+  iframe {
     min-height: 200px;
   }
 }
 
-.contactform-fullwidth {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  background: #fff;
+/* Add or update in e:\Project-freelance\luhith\Ayur\src\components\ContactUs\ContactUs.css */
+
+@media (max-width: 991.98px) {
+  .contactus-maps-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contactus-maps-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

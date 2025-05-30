@@ -26,52 +26,62 @@ function Product() {
 
   return (
     <>
-      <div className="product-main-container">
-        <div className="product-left"></div>
-        <div className="product-right product-right-single">
-          <h1 className="product-topic">Our Products</h1>
-          <p className="product-description">
-            The Indigenous Medicine of Sri Lanka or "Hela Wedakama" as it is known is Sri
-            Lanka’s unique centuries old heritage of a series of ancient indigenous medical
-            practices passed down from one generation to the next. While some ancient
-            cities of Sri Lanka including Polonnaruwa, Medirigiriya, Anuradhapura and
-            Mihinthale still hold the ruins of what may well be the first hospitals in the
-            world, Sri Lanka lays proud claim to the fact that it is the first country in the
-            world to have pioneered the establishment of systematic hospitals solely based
-            on Hela Wedakama.
-          </p>
-          <button className="product-buy-btn">Buy Product</button>
-        </div>
-      </div>
-      <div className="product-grid-7">
-        {products.map((item, idx) => (
-          <div
-            className="product-card"
-            key={idx}
-            onMouseEnter={() => setHoveredIdx(idx)}
-            onMouseLeave={() => setHoveredIdx(null)}
-          >
-            <div className="product-card-title">{item.title}</div>
-            {/* Price under the name */}
-            {item.price && (
-              <div className="product-card-price">{item.price}</div>
-            )}
-            <div className="product-card-img-wrapper">
-              <img src={item.img} alt={item.title} className="product-card-img" />
-              <div className={`sheen${hoveredIdx === idx ? ' active' : ''}`}></div>
-             {hoveredIdx === idx && (
-  <a
-    href="https://wa.me/94761387620"
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{ textDecoration: 'none' }}
-  >
-    <button className="product-card-btn">Buy now</button>
-  </a>
-)}
+      <div className="container mt-5">
+        <div className="row g-0 align-items-stretch product-main-container">
+          {/* Image column: left on desktop, top on mobile/tablet */}
+          <div className="col-12 col-md-5 d-flex p-0">
+            <div className="product-left w-100"></div>
+          </div>
+          {/* Content column: right on desktop, below on mobile/tablet */}
+          <div className="col-12 col-md-7 d-flex align-items-center p-0">
+            <div className="product-right product-right-single w-100">
+              <h1 className="product-topic">Our Products</h1>
+              <p className="product-description">
+                The Indigenous Medicine of Sri Lanka or "Hela Wedakama" as it is known is Sri
+                Lanka’s unique centuries old heritage of a series of ancient indigenous medical
+                practices passed down from one generation to the next. While some ancient
+                cities of Sri Lanka including Polonnaruwa, Medirigiriya, Anuradhapura and
+                Mihinthale still hold the ruins of what may well be the first hospitals in the
+                world, Sri Lanka lays proud claim to the fact that it is the first country in the
+                world to have pioneered the establishment of systematic hospitals solely based
+                on Hela Wedakama.
+              </p>
+              <button className="product-buy-btn">Buy Product</button>
             </div>
           </div>
-        ))}
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          {products.map((item, idx) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex" key={idx}>
+              <div
+                className="product-card w-100"
+                onMouseEnter={() => setHoveredIdx(idx)}
+                onMouseLeave={() => setHoveredIdx(null)}
+              >
+                <div className="product-card-title">{item.title}</div>
+                {item.price && (
+                  <div className="product-card-price">{item.price}</div>
+                )}
+                <div className="product-card-img-wrapper">
+                  <img src={item.img} alt={item.title} className="product-card-img" />
+                  <div className={`sheen${hoveredIdx === idx ? ' active' : ''}`}></div>
+                  {hoveredIdx === idx && (
+                    <a
+                      href="https://wa.me/94761387620"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <button className="product-card-btn">Buy now</button>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

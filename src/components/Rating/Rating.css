@@ -1,60 +1,42 @@
-.rating-container {
-    display: flex;
-    align-items: center;
-    /* border: 1px solid #ddd; */
-    border-radius: 220px 8px;
-    padding: 16px;
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    max-width: 1300px;
-    margin: 20px auto;
-    background-color: #fff;
-    font-family: 'Inter', sans-serif;
-    margin-top: 100px;
-  }
-  
-  .rating-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .rating-content {
-    margin-left: 20px;
-    flex: 1;
-  }
-  
-  .rating-content h2 {
-    margin: 30px;
-    font-size: 2.5rem;
-   color: #701515;
-  }
-   .rating-content h4 {
-    margin: 30px;
-    font-size: 1.5rem;
-    color: #414141;
-    margin-top: -10px;
-  }
-  
-  .rating-content p {
-    margin: 30px;
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .rating-button {
-    padding: 10px 20px; /* Add padding inside the button */
-    background-color: #701515;; /* Green background color */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Rounded corners */
-    font-size: 1rem; /* Font size */
-    font-weight: 600; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    margin: 30px;
-  }
-  
-  .rating-button:hover {
-    background-color: #00604b; /* Darker green on hover */
+.rating-bg {
+  background: url('../../assets/Rting.png') center center/cover no-repeat;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  min-height: 400px;
+  padding: 2rem 1rem; /* Add padding for all screens */
+}
 
+.rating-content h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.rating-content h4 {
+  font-size: 1.5rem;
+  color: #9b9b9b;
+  margin-bottom: 1rem;
+}
+
+.rating-content p {
+  color: #7e7e7e;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Extra margin for small screens */
+@media (max-width: 576px) {
+  .rating-content {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
+
+  .rating-bg {
+  border-radius: 0px;
+  
+}
+
+}

@@ -1,71 +1,37 @@
 .profile-row-simple {
-  width: 1300px;
-  height: 600px;
-  margin: 40px auto;
   background: #f5f5f5;
   border-radius: 24px;
-  display: flex;
-  overflow: hidden;
-  border: 1px solid #cfcfcf;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-  /* z-index: -5;  <-- REMOVED */
-}
+  border: 1px solid #cfcfcf;
 
-.profile-left-simple {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff00;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.profile-image-wrapper {
+  margin: 80px auto;
+  max-width: 1300px;   /* Main div width */
   width: 100%;
-  height: 100%;
-  position: relative;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  /* z-index: -1; <-- REMOVED */
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .profile-img-simple {
+  border-radius: 18px 0px 0px 18px;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 0;
-  /* z-index: -1; <-- REMOVED */
+  max-width: none;
+  max-height: 600px;
+  min-height: 120px;
 }
 
-.profile-title-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 24px 12px 12px 12px;
-  background: rgba(0,0,0,0.45);
-  color: #ffffff00;
+.profile-title-right {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  z-index: 2;
+  margin-bottom: 12px;
+  color: #701515;
+  line-height: 1.4;
 }
 
-.profile-right-simple {
-  flex: 1;
-  background: linear-gradient(50deg, #ffffff 60%, #ffedca 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 40px 32px;
-}
 .profile-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 32px;
   line-height: 1.8;
 }
@@ -86,12 +52,17 @@
 .profile-readmore-btn:hover {
   background-color: #4d0f0f;
 }
-.profile-title-right {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 18px;
-  color: #701515;
-  line-height: 1.4;
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .profile-row-simple {
+    flex-direction: column;
+    padding: 8px 0;
+    max-width: 100%;
+  }
+  .profile-img-simple {
+    max-height: 180px;
+  }
 }
 
 .modal-overlay {
@@ -108,24 +79,27 @@
 }
 
 .modal-content {
-  background: #fff;
+  width: 800px;
+  max-width: 90vw;
+  height: auto;
   border-radius: 12px;
-  padding: 24px;
+  border: 1px solid #eee;
+  background-color: #fff;
   position: relative;
-  max-width: 50vw;
-  max-height: 90vh;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: stretch;
 }
 
-.modal-content .fp-iframe {
+.fp-iframe {
   width: 800px;
-  max-width: 80vw;
-  height: 400px;
+  max-width: 90vw;
+  height: 500px;
   max-height: 70vh;
   border-radius: 8px;
+  border: 1px solid #eee;
+  display: block;
 }
 
 .modal-close-btn {
@@ -144,4 +118,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .modal-content, .fp-iframe {
+    width: 90vw;
+    max-width: 98vw;
+  }
+  .fp-iframe {
+    height: 40vh;
+    max-height: 40vh;
+  }
 }

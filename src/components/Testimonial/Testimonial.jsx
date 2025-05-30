@@ -1,8 +1,7 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Testimonial.css';
 import ratingBadge from '../../assets/rating99.png';
-
-// Import images for local assets
 import rew01 from '../../assets/rew01.jpg';
 import rew02 from '../../assets/rew02.jpg';
 
@@ -34,28 +33,32 @@ function Testimonial() {
   return (
     <section className="testimonial-section">
       <h2 className="testimonial-title">What Our Customers Say</h2>
-      <div className="testimonial-container">
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="testimonial-card">
-            <img
-              src={ratingBadge}
-              alt="99 Rating"
-              className="testimonial-badge"
-            />
-            <img
-              src={testimonial.image}
-              alt={testimonial.name}
-              className="testimonial-image"
-            />
-            <h3 className="testimonial-name">{testimonial.name}</h3>
-            <div className="testimonial-stars">
-              {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <span key={i} className="star">&#9733;</span>
-              ))}
+      <div className="container">
+        <div className="row justify-content-center">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+              <div className="testimonial-card w-100 position-relative">
+                <img
+                  src={ratingBadge}
+                  alt="99 Rating"
+                  className="testimonial-badge"
+                />
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="testimonial-image"
+                />
+                <h3 className="testimonial-name">{testimonial.name}</h3>
+                <div className="testimonial-stars">
+                  {Array.from({ length: testimonial.rating }).map((_, i) => (
+                    <span key={i} className="star">&#9733;</span>
+                  ))}
+                </div>
+                <p className="testimonial-review">"{testimonial.review}"</p>
+              </div>
             </div>
-            <p className="testimonial-review">"{testimonial.review}"</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

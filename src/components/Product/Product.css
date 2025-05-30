@@ -1,5 +1,6 @@
 .product-main-container {
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     margin: 40px auto;
     display: flex;
     min-height: 400px;
@@ -8,6 +9,8 @@
     box-shadow: 0 8px 32px rgba(0,0,0,0.10);
     background: transparent;
     background-color: #fff5db;
+    flex-direction: row;
+    gap: 0;
 }
 
 .product-left {
@@ -24,6 +27,7 @@
 }
 
 .product-right-single {
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +35,9 @@
     padding: 60px 40px;
     height: 100%;
 }
+
+/* Removed custom media query for responsiveness.
+   Bootstrap grid now handles responsiveness. */
 
 .product-topic {
     font-size: 3rem;
@@ -84,18 +91,7 @@
     margin-right: 6px;
 }
 
-/* ...existing code... */
-
-.product-grid-7 {
-    width: 1300px;
-    margin: 40px auto 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 32px;
-}
-
-/* ...existing code... */
+/* Removed .product-grid-7 grid styles, Bootstrap grid is used instead */
 
 .product-card {
     background: #ffffff;
@@ -124,7 +120,6 @@
     justify-content: center;
 }
 
-/* ...rest of your CSS remains unchanged... */
 .product-card-img {
     width: 200px;
     height: 250px;
@@ -133,14 +128,6 @@
     background: #ffffff00;
     display: block;
 }
-
-/* Center the 3 images in the second row */
-.product-grid-7 > :nth-child(5) { grid-column: 2; grid-row: 2; }
-.product-grid-7 > :nth-child(6) { grid-column: 3; grid-row: 2; }
-.product-grid-7 > :nth-child(7) { grid-column: 4; grid-row: 2; }
-
-
-/* ...existing code... */
 
 .product-card-img-wrapper {
     position: relative;

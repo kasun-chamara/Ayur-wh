@@ -1,7 +1,6 @@
 import React from 'react';
 import './ProductPage.css';
 
-// 20 demo products with online images
 const products = [
   {
     title: 'Herbal Pain Relief Oil',
@@ -129,30 +128,34 @@ function ProductPage() {
   return (
     <div className="productpage-container">
       <div className="productpage-header">
-  <h1 className="maintitle">Waharaka Products</h1>
-  <p className="productpage-desc">
-    The Waharaka Hela Osu product range includes cures and treatments for many maladies, ailments, diseases and illnesses prevalent in Sri Lankans of all ages.
-  </p>
-</div>
-      <div className="productcard-grid">
-        {products.map((item, idx) => (
-          <div className="productcard-new" key={idx}>
-            <h2 className="productcard-title-new">{item.title}</h2>
-            <img src={item.img} alt={item.title} className="productcard-img-new" />
-            <p className="productcard-desc-new">{item.desc}</p>
-            <div className="productcard-bottom-row">
-              <span className="productcard-price">{item.price}</span>
-             <a
-  href="https://wa.me/94761387620"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ textDecoration: 'none' }}
->
-  <button className="productcard-btn-new">Buy Now</button>
-</a>
+        <h1 className="maintitle">Waharaka Products</h1>
+        <p className="productpage-desc ">
+          The Waharaka Hela Osu product range includes cures and treatments for many maladies, ailments, diseases and illnesses prevalent in Sri Lankans of all ages.
+        </p>
+      </div>
+      <div className="container">
+        <div className="row">
+          {products.map((item, idx) => (
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex" key={idx}>
+              <div className="productcard-new w-100">
+                <h2 className="productcard-title-new">{item.title}</h2>
+                <img src={item.img} alt={item.title} className="productcard-img-new" />
+                <p className="productcard-desc-new">{item.desc}</p>
+                <div className="productcard-bottom-row">
+                  <span className="productcard-price">{item.price}</span>
+                  <a
+                    href="https://wa.me/94761387620"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <button className="productcard-btn-new">Buy</button>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
