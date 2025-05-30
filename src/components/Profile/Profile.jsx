@@ -10,17 +10,18 @@ const Profile = () => {
 
   return (
     <div className="container">
-      <div className="row profile-row-simple align-items-center">
+      <div className="row profile-row-simple align-items-stretch">
         {/* Image column */}
-        <div className="col-12 col-md-6 d-flex justify-content-center">
+        <div className="col-12 col-md-12 col-lg-6 d-flex justify-content-center h-100">
           <img
             src={theroImg}
             alt="වහරක අභයතනාලංකාර මහ තෙරුන් වහන්සේ"
             className="profile-img-simple"
+            style={{ maxHeight: 580, height: "100%", objectFit: "cover" }}
           />
         </div>
         {/* Content column */}
-        <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <div className="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center h-100">
           <h2 className="profile-title-right p-3">
             පූජ්‍යපාද වහරක අභයතනාලංකාර මහ තෙරුන් වහන්සේ
           </h2>

@@ -32,23 +32,24 @@ function Product() {
           <div className="col-12 col-md-5 d-flex p-0">
             <div className="product-left w-100"></div>
           </div>
-          {/* Content column: right on desktop, below on mobile/tablet */}
-          <div className="col-12 col-md-7 d-flex align-items-center p-0">
-            <div className="product-right product-right-single w-100">
-              <h1 className="product-topic">Our Products</h1>
-              <p className="product-description">
-                The Indigenous Medicine of Sri Lanka or "Hela Wedakama" as it is known is Sri
-                Lanka’s unique centuries old heritage of a series of ancient indigenous medical
-                practices passed down from one generation to the next. While some ancient
-                cities of Sri Lanka including Polonnaruwa, Medirigiriya, Anuradhapura and
-                Mihinthale still hold the ruins of what may well be the first hospitals in the
-                world, Sri Lanka lays proud claim to the fact that it is the first country in the
-                world to have pioneered the establishment of systematic hospitals solely based
-                on Hela Wedakama.
-              </p>
-              <button className="product-buy-btn">Buy Product</button>
-            </div>
-          </div>
+         <div className="container mt-5">
+  <div className="product-main-container product-main-bg d-flex justify-content-center align-items-center">
+    <div className="product-main-content text-center">
+      <h1 className="product-topic m-3">Our Products</h1>
+      <p className="product-description m-3">
+        The Indigenous Medicine of Sri Lanka or "Hela Wedakama" as it is known is Sri
+        Lanka’s unique centuries old heritage of a series of ancient indigenous medical
+        practices passed down from one generation to the next. While some ancient
+        cities of Sri Lanka including Polonnaruwa, Medirigiriya, Anuradhapura and
+        Mihinthale still hold the ruins of what may well be the first hospitals in the
+        world, Sri Lanka lays proud claim to the fact that it is the first country in the
+        world to have pioneered the establishment of systematic hospitals solely based
+        on Hela Wedakama.
+      </p>
+      <button className="product-buy-btn m-3">Buy Product</button>
+    </div>
+  </div>
+</div>
         </div>
       </div>
       <div className="container">
